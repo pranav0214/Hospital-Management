@@ -3,11 +3,11 @@
   "routes": [
     {
       "src": "/",
-      "dest": "/Hospital Management/index.html"
+      "dest": "/Hospital%20Management/index.html"
     },
     {
       "src": "/competitor-analysis",
-      "dest": "/Hospital Management/hms-competitor analysis.html"
+      "dest": "/Hospital%20Management/hms-competitor%20analysis.html"
     },
     {
       "src": "/(.*)",
