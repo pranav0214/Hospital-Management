@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HMS Market Research — Competitor Analysis 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:       #1A1A2E;
+  --ink-mid:   #3D3D5C;
+  --ink-soft:  #6B6B8A;
+  --ink-faint: #9898B2;
+  --page:      #FAFAF8;
+  --surface:   #FFFFFF;
+  --rule:      #E8E8F0;
+
+  --blue:      #2563EB;
+  --blue-bg:   #EFF6FF;
+  --blue-bd:   #BFDBFE;
+  --teal:      #0F766E;
+  --teal-bg:   #F0FDFA;
+  --teal-bd:   #99F6E4;
+  --amber:     #B45309;
+  --amber-bg:  #FFFBEB;
+  --amber-bd:  #FDE68A;
+  --green:     #15803D;
+  --green-bg:  #F0FDF4;
+  --green-bd:  #BBF7D0;
+  --purple:    #6D28D9;
+  --purple-bg: #F5F3FF;
+  --purple-bd: #DDD6FE;
+  --coral:     #BE123C;
+  --coral-bg:  #FFF1F2;
+  --coral-bd:  #FECDD3;
+  --slate:     #475569;
+  --slate-bg:  #F8FAFC;
+  --slate-bd:  #CBD5E1;
+  --aws:       #FF9900;
+  --aws-bg:    #FFFBF0;
+  --aws-bd:    #FED7AA;
+
+  --r:  10px;
+  --r2: 16px;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; font-size: 16px; }
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: var(--page);
+  color: var(--ink);
+  line-height: 1.65;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--surface);
+  border-bottom: 1px solid var(--rule);
+  padding: 64px 48px 52px;
+}
+.hero-inner { max-width: 1080px; margin: 0 auto; }
+.hero-eyebrow {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 11.5px; font-weight: 600; letter-spacing: .08em;
+  text-transform: uppercase; color: var(--blue);
+  background: var(--blue-bg); border: 1px solid var(--blue-bd);
+  padding: 4px 14px; border-radius: 20px; margin-bottom: 20px;
+}
+.hero h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: clamp(32px, 4.5vw, 52px);
+  font-weight: 700; line-height: 1.15; letter-spacing: -.5px;
+  color: var(--ink); margin-bottom: 14px;
+}
+.hero h1 em { font-style: normal; color: var(--blue); }
+.hero p {
+  font-size: 17px; color: var(--ink-soft); font-weight: 300;
+  max-width: 600px; line-height: 1.7; margin-bottom: 36px;
+}
+.hero-stats {
+  display: flex; gap: 0; border: 1px solid var(--rule);
+  border-radius: var(--r2); overflow: hidden; width: fit-content;
+}
+.stat {
+  padding: 18px 28px; text-align: center;
+  border-right: 1px solid var(--rule);
+}
+.stat:last-child { border-right: none; }
+.stat-n {
+  font-family: 'Fraunces', serif;
+  font-size: 26px; font-weight: 600; color: var(--ink); line-height: 1;
+}
+.stat-l { font-size: 11.5px; color: var(--ink-faint); margin-top: 3px; text-transform: uppercase; letter-spacing: .05em; }
+
+/* ── NAVBAR ── */
+.navbar {
+  position: sticky; top: 0; z-index: 200;
+  background: rgba(255,255,255,.97);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--rule);
+  box-shadow: 0 1px 12px rgba(0,0,0,.05);
+}
+.nav-wrap {
+  max-width: 1080px; margin: 0 auto;
+  padding: 0 48px;
+  display: flex; align-items: stretch; gap: 2px;
+  overflow-x: auto; scrollbar-width: none;
+}
+.nav-wrap::-webkit-scrollbar { display: none; }
+.nav-group {
+  display: flex; align-items: stretch; gap: 0;
+}
+.nav-sep {
+  width: 1px; background: var(--rule);
+  margin: 10px 8px; flex-shrink: 0;
+}
+.nav-label {
+  font-size: 10px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--ink-faint);
+  align-self: center; padding: 0 6px; white-space: nowrap;
+  flex-shrink: 0;
+}
+.nav-a {
+  display: flex; align-items: center; gap: 7px;
+  font-size: 13px; font-weight: 500; color: var(--ink-soft);
+  text-decoration: none; padding: 14px 10px;
+  white-space: nowrap; flex-shrink: 0;
+  border-bottom: 2px solid transparent;
+  transition: all .15s;
+}
+.nav-a:hover { color: var(--ink); }
+.nav-a.active { color: var(--blue); border-bottom-color: var(--blue); }
+.nav-pip { width: 7px; height: 7px; border-radius: 50%; flex-shrink: 0; }
+
+/* ── CONTENT WRAP ── */
+.wrap { max-width: 1080px; margin: 0 auto; padding: 48px 48px 100px; }
+
+/* ── SECTION DIVIDER ── */
+.sec-head {
+  display: flex; align-items: center; gap: 16px;
+  margin: 56px 0 32px;
+}
+.sec-head:first-child { margin-top: 0; }
+.sec-label {
+  font-size: 11px; font-weight: 600; letter-spacing: .1em;
+  text-transform: uppercase; padding: 5px 16px; border-radius: 20px;
+  white-space: nowrap;
+}
+.sec-rule { flex: 1; height: 1px; background: var(--rule); }
+.sec-count { font-size: 12px; color: var(--ink-faint); white-space: nowrap; }
+
+/* ── COMPETITOR CARD ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--rule);
+  border-radius: var(--r2);
+  margin-bottom: 24px;
+  overflow: hidden;
+  transition: box-shadow .2s;
+}
+.card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.07); }
+
+.card-stripe { height: 4px; width: 100%; }
+
+.card-head {
+  padding: 28px 32px 22px;
+  display: flex; justify-content: space-between;
+  align-items: flex-start; gap: 20px; flex-wrap: wrap;
+}
+.card-identity { display: flex; align-items: flex-start; gap: 16px; }
+.logo-box {
+  width: 50px; height: 50px; border-radius: 12px;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 15px; font-weight: 700; flex-shrink: 0;
+  font-family: 'Fraunces', serif; letter-spacing: -.5px;
+}
+.comp-title {
+  font-family: 'Fraunces', serif;
+  font-size: 21px; font-weight: 600;
+  color: var(--ink); line-height: 1.2;
+}
+.comp-sub { font-size: 13px; color: var(--ink-soft); margin-top: 3px; }
+.tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 9px; }
+.tag {
+  font-size: 11px; font-weight: 500;
+  padding: 3px 10px; border-radius: 20px; border: 1px solid;
+}
+
+.card-actions { display: flex; gap: 8px; flex-wrap: wrap; flex-shrink: 0; }
+.btn {
+  font-size: 13px; font-weight: 500;
+  padding: 8px 18px; border-radius: 8px;
+  text-decoration: none; display: inline-flex;
+  align-items: center; gap: 6px; transition: all .15s;
+  white-space: nowrap;
+}
+.btn-primary { background: var(--ink); color: #fff; }
+.btn-primary:hover { background: var(--ink-mid); }
+.btn-ghost { border: 1px solid var(--rule); color: var(--ink-soft); background: var(--page); }
+.btn-ghost:hover { background: var(--rule); color: var(--ink); }
+
+/* ── CARD BODY ── */
+.card-body { padding: 0 32px 28px; }
+.card-divider { height: 1px; background: var(--rule); margin: 0 32px 24px; }
+
+.two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; margin-bottom: 20px; }
+@media (max-width: 680px) { .two-col { grid-template-columns: 1fr; } }
+
+.feat-block h5 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--ink-faint);
+  margin-bottom: 12px; padding-bottom: 8px;
+  border-bottom: 1px solid var(--rule);
+}
+.feat-item {
+  display: flex; align-items: flex-start; gap: 10px;
+  padding: 5px 0; border-bottom: 1px solid var(--page);
+  font-size: 13.5px; color: var(--ink-mid); line-height: 1.45;
+}
+.feat-item:last-child { border-bottom: none; }
+.feat-dot { width: 6px; height: 6px; border-radius: 50%; flex-shrink: 0; margin-top: 7px; }
+
+/* ── UNIQUE ROW ── */
+.unique-row { margin-bottom: 18px; }
+.unique-row h5 {
+  font-size: 10.5px; font-weight: 600; letter-spacing: .09em;
+  text-transform: uppercase; color: var(--ink-faint);
+  margin-bottom: 10px;
+}
+.unique-chips { display: flex; flex-wrap: wrap; gap: 7px; }
+.chip {
+  font-size: 12px; font-weight: 500;
+  padding: 5px 13px; border-radius: 20px;
+  display: flex; align-items: center; gap: 5px;
+}
+
+/* ── TAKEAWAY ROW ── */
+.takeaway {
+  border-left: 3px solid; padding: 12px 16px;
+  border-radius: 0 8px 8px 0; font-size: 13.5px;
+  color: var(--ink-mid); font-style: italic; line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* ── CARD FOOTER ── */
+.card-foot {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 10px;
+  padding-top: 16px; border-top: 1px solid var(--page);
+}
+.price-tag {
+  font-size: 13px; font-weight: 500; color: var(--ink-mid);
+  background: var(--slate-bg); border: 1px solid var(--slate-bd);
+  padding: 5px 14px; border-radius: 8px;
+}
+.audience { font-size: 12.5px; color: var(--ink-soft); }
+
+/* ── AWS SPECIAL CARD ── */
+.aws-card {
+  background: linear-gradient(135deg, #FFFBF0 0%, #FFF7E6 100%);
+  border: 1.5px solid var(--aws-bd);
+  border-radius: var(--r2); padding: 36px 32px;
+  margin-bottom: 24px; position: relative; overflow: hidden;
+}
+.aws-badge {
+  position: absolute; top: 20px; right: 20px;
+  background: var(--aws); color: #fff;
+  font-size: 11px; font-weight: 700; letter-spacing: .06em;
+  text-transform: uppercase; padding: 5px 14px; border-radius: 20px;
+}
+.aws-title {
+  font-family: 'Fraunces', serif;
+  font-size: 22px; font-weight: 600; color: var(--ink); margin-bottom: 6px;
+}
+.aws-sub { font-size: 14px; color: var(--ink-soft); margin-bottom: 20px; }
+.aws-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; margin-bottom: 20px; }
+.aws-module {
+  background: rgba(255,255,255,.8); border: 1px solid var(--aws-bd);
+  border-radius: var(--r); padding: 16px;
+}
+.aws-module h4 { font-size: 13px; font-weight: 600; color: var(--ink); margin-bottom: 8px; }
+.aws-feat { font-size: 12.5px; color: var(--ink-mid); padding: 3px 0; display: flex; gap: 6px; }
+.aws-feat::before { content: '▸'; color: var(--aws); flex-shrink: 0; font-size: 11px; margin-top: 2px; }
+.aws-insight {
+  background: rgba(255,153,0,.12); border: 1px solid var(--aws-bd);
+  border-radius: var(--r); padding: 14px 18px;
+  font-size: 13.5px; color: var(--amber); font-style: italic;
+  margin-bottom: 16px;
+}
+.aws-links { display: flex; gap: 10px; flex-wrap: wrap; }
+
+/* ── GULF ALERT ── */
+.gulf-alert {
+  background: var(--blue-bg); border: 1px solid var(--blue-bd);
+  border-radius: var(--r); padding: 16px 20px;
+  display: flex; gap: 14px; align-items: flex-start;
+  margin-bottom: 28px;
+}
+.alert-icon {
+  width: 30px; height: 30px; border-radius: 50%;
+  background: var(--blue); color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  font-size: 13px; font-weight: 700; flex-shrink: 0;
+}
+.gulf-alert p { font-size: 13.5px; color: #1D4ED8; line-height: 1.6; }
+
+/* ── FOOTER ── */
+.site-footer {
+  background: var(--ink); color: #8888AA;
+  text-align: center; padding: 36px 24px;
+  font-size: 13px; line-height: 1.8;
+}
+.site-footer strong { color: #fff; }
+
+/* ── RESPONSIVE ── */
+@media (max-width: 760px) {
+  .hero, .wrap { padding-left: 20px; padding-right: 20px; }
+  .nav-wrap { padding: 0 16px; }
+  .hero-stats { flex-wrap: wrap; }
+  .card-head { flex-direction: column; }
+  .card-head, .card-body { padding-left: 20px; padding-right: 20px; }
+  .card-divider { margin-left: 20px; margin-right: 20px; }
+  .aws-card { padding: 24px 20px; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════ HERO ════════════ -->
+<header class="hero">
+  <div class="hero-inner">
+    <div class="hero-eyebrow">Hospital Management System</div>
+    <h1>Who are we <em>competing</em> against?</h1>
+    <p>A clear, honest look at the 9 key HMS platforms in the market today — what they do well, where they fall short, and what we can learn from each of them.</p>
+    <div class="hero-stats">
+      <div class="stat"><div class="stat-n">9</div><div class="stat-l">Competitors</div></div>
+      <div class="stat"><div class="stat-n">3</div><div class="stat-l">Markets</div></div>
+      <div class="stat"><div class="stat-n">40+</div><div class="stat-l">Features Mapped</div></div>
+      <div class="stat"><div class="stat-n">Apr 2026</div><div class="stat-l">Report Date</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- ════════════ NAVBAR ════════════ -->
+<nav class="navbar">
+  <div class="nav-wrap">
+    <div class="nav-group">
+      <span class="nav-label">Global</span>
+      <a class="nav-a" href="#zoho"><span class="nav-pip" style="background:#0F766E"></span>Zoho</a>
+      <a class="nav-a" href="#openemr"><span class="nav-pip" style="background:#475569"></span>OpenEMR</a>
+      <a class="nav-a" href="#epic"><span class="nav-pip" style="background:#2563EB"></span>Epic</a>
+      <a class="nav-a" href="#meditech"><span class="nav-pip" style="background:#0F766E"></span>Meditech</a>
+      <a class="nav-a" href="#tebra"><span class="nav-pip" style="background:#B45309"></span>Tebra</a>
+      <a class="nav-a" href="#curemd"><span class="nav-pip" style="background:#BE123C"></span>CureMD</a>
+      <a class="nav-a" href="#nextgen"><span class="nav-pip" style="background:#15803D"></span>NextGen</a>
+      <a class="nav-a" href="#ehospital"><span class="nav-pip" style="background:#6D28D9"></span>eHospital</a>
+    </div>
+    <div class="nav-sep"></div>
+    <div class="nav-group">
+      <span class="nav-label">Gulf</span>
+      <a class="nav-a" href="#medicoplus"><span class="nav-pip" style="background:#2563EB"></span>MedicoPlus</a>
+    </div>
+    <div class="nav-sep"></div>
+    <div class="nav-group">
+      <span class="nav-label">AI Layer</span>
+      <a class="nav-a" href="#aws"><span class="nav-pip" style="background:#FF9900"></span>AWS AI</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════ CONTENT ════════════ -->
+<main class="wrap">
+
+  <!-- ── SECTION: GLOBAL ── -->
+  <div class="sec-head">
+    <div class="sec-label" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">🌐 Global Platforms</div>
+    <div class="sec-rule"></div>
+    <div class="sec-count">8 platforms analysed</div>
+  </div>
+
+  <!-- ① ZOHO -->
+  <article class="card" id="zoho">
+    <div class="card-stripe" style="background:var(--teal)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--teal-bg);color:var(--teal)">ZH</div>
+        <div>
+          <div class="comp-title">Zoho Healthcare</div>
+          <div class="comp-sub">Comprehensive practice management software for healthcare providers</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--teal-bg);color:var(--teal);border-color:var(--teal-bd)">Practice Management</span>
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">Healthcare CRM</span>
+            <span class="tag" style="background:var(--amber-bg);color:var(--amber);border-color:var(--amber-bd)">India Focus 2026</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.zoho.com/healthcare/practice-management-software.html" target="_blank">↗ View Platform</a>
+        <a class="btn btn-ghost" href="https://www.zoho.com/healthcare/" target="_blank">Healthcare Hub</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>What it does</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Digital patient onboarding — no paperwork, no errors</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Smart appointment scheduling across multiple clinics</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Visit creation & queue management to cut no-shows</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Interdepartment patient referrals & lab sharing</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Centralised billing & post-visit summaries</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Electronic medical records (EMR) with full compliance</div>
+        </div>
+        <div class="feat-block">
+          <h5>What's still missing</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>No dedicated IPD / bed management module yet</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Practice Management still in early access — interface redesign underway</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Not a full out-of-the-box HMS — needs configuration</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Gulf market not in roadmap for 2026</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Supporting tools: HR (Zoho People), Billing (Zoho Books), Telehealth, e-Signatures (Zoho Sign)</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">WhatsApp + SMS + chatbot patient reminders</div>
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">Entire business suite — CRM, HR, Finance, Helpdesk in one</div>
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">Low-code custom app builder (Zoho Creator)</div>
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">AES-256 encryption — enterprise-grade security</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--teal);background:var(--teal-bg)">
+        <strong>Our takeaway:</strong> Zoho is not a direct HMS rival today — it's a business suite that can be configured for healthcare. Their WhatsApp-first patient communication approach and unified business tools are worth borrowing. They're still building their HMS, which means the market gap we're targeting is real.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">From $19/month · Custom for enterprise</span>
+        <span class="audience">All practice sizes · India primary market 2026</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ② OPENEMR -->
+  <article class="card" id="openemr">
+    <div class="card-stripe" style="background:var(--slate)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--slate-bg);color:var(--slate)">OE</div>
+        <div>
+          <div class="comp-title">OpenEMR</div>
+          <div class="comp-sub">A Modern EHR at a Fraction of the Cost — Free & Open Source</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">Free & Open Source</span>
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">ONC Certified</span>
+            <span class="tag" style="background:var(--slate-bg);color:var(--slate);border-color:var(--slate-bd)">Multi-Language</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.open-emr.org" target="_blank">↗ Official Site</a>
+        <a class="btn btn-ghost" href="https://demo.open-emr.org" target="_blank">Live Demo</a>
+        <a class="btn btn-ghost" href="https://github.com/openemr/openemr" target="_blank">GitHub</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>What it does</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>Full patient registration & medical record management (EMR)</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>Appointment scheduling & calendar</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>Billing & invoicing module</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>E-prescribing & prescription management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>Built-in telehealth & patient portal</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>REST API & FHIR support for integrations</div>
+        </div>
+        <div class="feat-block">
+          <h5>Developer & compliance</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>ONC certified — fully regulatory compliant</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>HIPAA & GDPR compliant architecture</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>40+ languages — globally deployable</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>Full source code — build anything on top of it</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>Active worldwide open-source community</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--slate)"></div>Reporting & document management</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">Completely FREE — zero licensing cost</div>
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">Largest open-source EHR community worldwide</div>
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">Full source code — 100% customisable</div>
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">ONC certified globally compliant out-of-box</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--slate);background:var(--slate-bg)">
+        <strong>Our takeaway:</strong> OpenEMR proves that a powerful, compliant HMS doesn't need to cost a fortune. Their open-source model has built an enormous community but comes with a technical barrier — no modern mobile experience, no Gulf compliance, and no receptionist-friendly UI. That's where our product wins.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">Free (Open Source) · Implementation costs vary</span>
+        <span class="audience">Startups, NGOs, developing markets, custom builds</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ③ EPIC -->
+  <article class="card" id="epic">
+    <div class="card-stripe" style="background:var(--blue)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--blue-bg);color:var(--blue)">EP</div>
+        <div>
+          <div class="comp-title">Epic Systems</div>
+          <div class="comp-sub">With the Patient at the Heart — World's Leading Health Software</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">Market Leader</span>
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">AI Integrated</span>
+            <span class="tag" style="background:var(--amber-bg);color:var(--amber);border-color:var(--amber-bd)">Enterprise Only</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.epic.com" target="_blank">↗ Visit Epic</a>
+        <a class="btn btn-ghost" href="https://www.mychart.org" target="_blank">MyChart App</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>Core platform</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Single comprehensive medical record for every patient</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Patient registration, admission, discharge & transfer</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>MyChart patient portal — iOS & Android with e-check-in from home</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Full EHR / EMR, pharmacy, lab (Beaker), radiology</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Revenue cycle, billing & insurance claims management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Staff scheduling & doctor availability management</div>
+        </div>
+        <div class="feat-block">
+          <h5>Advanced capabilities</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Care Everywhere — share records across different hospitals</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>MyChart Central — one login for patients across multiple health systems</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Haiku & Canto — mobile apps for doctors on the go</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>AI Text Assistant — simplifies clinical notes for patients</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Health Alerts — real-time county-level disease monitoring</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>TEFCA-connected — shares records with Social Security Administration</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">Care Everywhere — cross-organisation record sharing</div>
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">MyChart Central — single login across hospitals</div>
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">Real-time county-level Health Alerts (2026)</div>
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">AI clinical notes — patients actually understand them</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--blue);background:var(--blue-bg)">
+        <strong>Our takeaway:</strong> Epic is the gold standard — used by 38% of US hospitals. However it costs between $30,000 and $500,000+ per month and requires months of implementation. It is completely inaccessible to small and mid-size hospitals in the Gulf or South Asia. That pricing gap is our opportunity.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">$30,000 – $500,000+ / month</span>
+        <span class="audience">Large hospitals, academic medical centres & health systems</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ④ MEDITECH -->
+  <article class="card" id="meditech">
+    <div class="card-stripe" style="background:var(--teal)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--teal-bg);color:var(--teal)">MT</div>
+        <div>
+          <div class="comp-title">Meditech Expanse</div>
+          <div class="comp-sub">Expanse Patient Connect — Cloud-Native EHR Built for Modern Healthcare</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--teal-bg);color:var(--teal);border-color:var(--teal-bd)">Cloud-Native</span>
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">iPhone Health Records</span>
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">Google Cloud Partner</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://ehr.meditech.com/ehr-solutions/expanse-patient-connect" target="_blank">↗ Expanse Patient Connect</a>
+        <a class="btn btn-ghost" href="https://ehr.meditech.com" target="_blank">Full Platform</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>Patient connect features</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Expanse Patient Connect — patient-facing digital engagement</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Health Records on iPhone — Apple native integration</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Virtual visits built directly into the EHR</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Patient engagement & appointment management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Clinical decision support at point of care</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Population health & surveillance tools</div>
+        </div>
+        <div class="feat-block">
+          <h5>Platform modules</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Meditech Expanse — fully cloud-native hospital EHR</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Ambulatory, pharmacy, pathology & radiology modules</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Revenue cycle & billing management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Artificial intelligence tools for clinical workflows</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Genomics module — personalised medicine support</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--teal)"></div>Google Cloud partnership for scale & analytics</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">Health Records on iPhone — Apple-native experience</div>
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">Genomics module — DNA-level personalised care</div>
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">Google Cloud strategic partnership</div>
+          <div class="chip" style="background:var(--teal-bg);color:var(--teal);border:1px solid var(--teal-bd)">MEDITECH as a Service (MaaS) — fully managed SaaS</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--teal);background:var(--teal-bg)">
+        <strong>Our takeaway:</strong> Meditech's tight Apple integration and Google Cloud partnership show where healthcare is heading — deeply embedded in the devices people already use. Building a seamless mobile experience is not optional; it's the baseline expectation in 2026.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">Custom quote</span>
+        <span class="audience">Community hospitals & regional health systems</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ⑤ TEBRA -->
+  <article class="card" id="tebra">
+    <div class="card-stripe" style="background:var(--amber)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--amber-bg);color:var(--amber)">TB</div>
+        <div>
+          <div class="comp-title">Tebra (formerly Kareo)</div>
+          <div class="comp-sub">Patient Experience Software for Independent Medical Practices</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--amber-bg);color:var(--amber);border-color:var(--amber-bd)">Independent Practices</span>
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">Telehealth Built-in</span>
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">Practice Marketing</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.tebra.com/patient-experience" target="_blank">↗ Patient Experience</a>
+        <a class="btn btn-ghost" href="https://www.tebra.com" target="_blank">Full Platform</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>Patient experience tools</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Online appointment scheduling — 24/7, no phone needed</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Digital intake forms — patients fill in from home</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Automated appointment reminders via SMS & email</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Two-way secure patient messaging</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>EHR with AI-powered clinical documentation</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Medical billing & automated claim submission</div>
+        </div>
+        <div class="feat-block">
+          <h5>Business growth tools</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Practice marketing — custom website & SEO tools</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Online reputation management for practices</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Patient payment collection — card on file, online pay</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Electronic labs, charting & e-prescribing</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Specialties: Family Medicine, Paediatrics, Mental Health, Nursing</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--amber)"></div>Billing company integrations for outsourced billing</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd)">Practice marketing & SEO — grows patient volume</div>
+          <div class="chip" style="background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd)">Automated claim scrubbing before insurance submission</div>
+          <div class="chip" style="background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd)">Online reputation management built into HMS</div>
+          <div class="chip" style="background:var(--amber-bg);color:var(--amber);border:1px solid var(--amber-bd)">Card-on-file for friction-free patient payments</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--amber);background:var(--amber-bg)">
+        <strong>Our takeaway:</strong> Tebra smartly bundles practice marketing alongside clinical tools — helping doctors grow their patient base, not just manage it. The concept of digital intake forms that patients complete before arriving is a feature that dramatically improves reception desk efficiency.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">~$140 / month per provider</span>
+        <span class="audience">Independent practices, small to mid-size clinics</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ⑥ CUREMD -->
+  <article class="card" id="curemd">
+    <div class="card-stripe" style="background:var(--coral)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--coral-bg);color:var(--coral)">CM</div>
+        <div>
+          <div class="comp-title">CureMD</div>
+          <div class="comp-sub">Practice Management — Put Your Practice on Track</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--coral-bg);color:var(--coral);border-color:var(--coral-bd)">AI Medical Scribe</span>
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">AI Contact Centre</span>
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">25 Years in Healthcare</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.curemd.com/practice-management.asp" target="_blank">↗ Practice Management</a>
+        <a class="btn btn-ghost" href="https://www.curemd.com" target="_blank">Full Suite</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>Core platform</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Unified healthcare platform — clinical + financial in one</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Cloud EHR with real-time patient data access</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Practice management — scheduling, billing, workflows</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Patient portal with secure messaging & online booking</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Revenue cycle management — capture every dollar</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Mobile EHR — full clinical power anywhere</div>
+        </div>
+        <div class="feat-block">
+          <h5>AI-powered tools</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>AI Medical Scribe — documents, codes & orders automatically</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>AI Contact Centre — automates booking, intake & patient queries</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Automated prior authorisation — reduces hours of admin daily</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Chronic care management software</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Specialty EHR — purpose-built for specific practices</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--coral)"></div>Credentialing services — faster insurance contracts</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--coral-bg);color:var(--coral);border:1px solid var(--coral-bd)">AI Medical Scribe — doctor talks, AI documents</div>
+          <div class="chip" style="background:var(--coral-bg);color:var(--coral);border:1px solid var(--coral-bd)">AI Contact Centre — patients book via voice/chat 24/7</div>
+          <div class="chip" style="background:var(--coral-bg);color:var(--coral);border:1px solid var(--coral-bd)">Automated prior authorisation — saves hours daily</div>
+          <div class="chip" style="background:var(--coral-bg);color:var(--coral);border:1px solid var(--coral-bd)">25+ years of healthcare domain expertise</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--coral);background:var(--coral-bg)">
+        <strong>Our takeaway:</strong> CureMD's AI Medical Scribe is the future — a doctor speaks and the system writes the clinical note, selects the diagnosis code and places orders automatically. Their AI Contact Centre also shows that appointment scheduling doesn't need a human receptionist on the phone anymore.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">Custom quote · 25+ years in the market</span>
+        <span class="audience">All practice sizes · USA primary market</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ⑦ NEXTGEN -->
+  <article class="card" id="nextgen">
+    <div class="card-stripe" style="background:var(--green)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--green-bg);color:var(--green)">NG</div>
+        <div>
+          <div class="comp-title">NextGen Healthcare</div>
+          <div class="comp-sub">Patient Care Access — AI-Enhanced EHR for Ambulatory Health</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">KLAS Award Winner</span>
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">Ambient AI</span>
+            <span class="tag" style="background:var(--amber-bg);color:var(--amber);border-color:var(--amber-bd)">Behavioral Health</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.nextgen.com/solutions/patient-experience/patient-care-access" target="_blank">↗ Patient Care Access</a>
+        <a class="btn btn-ghost" href="https://www.nextgen.com" target="_blank">Full Platform</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>Patient access features</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Multi-location patient scheduling & care access</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Patient self-scheduling portal — book online anytime</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Real-time insurance eligibility verification</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Referral & care transition management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Patient engagement portal with health records access</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Telehealth integration for remote visits</div>
+        </div>
+        <div class="feat-block">
+          <h5>AI & clinical tools</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>NextGen Ambient Assist — AI charting on mobile, no typing</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>NextGen Enterprise — KLAS award-winning EHR</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>NextGen Office — for practices under 10 providers</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Behavioral Health specialty suite (KLAS recognised 2025)</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Revenue cycle & billing management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--green)"></div>Population health analytics & insights</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">Ambient Assist — AI charts while doctor speaks on mobile</div>
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">Dedicated Behavioral Health module — KLAS 2025</div>
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">Two tiers — Enterprise (10+) and Office (under 10)</div>
+          <div class="chip" style="background:var(--green-bg);color:var(--green);border:1px solid var(--green-bd)">Mirth Connect — open-source health data interoperability</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--green);background:var(--green-bg)">
+        <strong>Our takeaway:</strong> NextGen's Ambient Assist is a standout — doctors open the app and speak naturally while it writes the chart in real time. No typing, no delays. Their two-tier model (Office vs Enterprise) is also smart — it lets them serve both small clinics and large hospitals on the same platform.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">~$199+ / month per provider</span>
+        <span class="audience">Ambulatory care, multi-specialty practices & health systems</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ⑧ eHOSPITAL -->
+  <article class="card" id="ehospital">
+    <div class="card-stripe" style="background:var(--purple)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--purple-bg);color:var(--purple)">eH</div>
+        <div>
+          <div class="comp-title">eHospital Systems</div>
+          <div class="comp-sub">Hospital Management System Software by Adroit — Trusted Across 4 Continents</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--purple-bg);color:var(--purple);border-color:var(--purple-bd)">50+ Countries</span>
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">Modular Architecture</span>
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">Cloud or On-Premise</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.adroitinfosystems.com/ehospital" target="_blank">↗ eHospital Systems</a>
+        <a class="btn btn-ghost" href="https://www.adroitinfosystems.com" target="_blank">Adroit Infosystems</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>Complete hospital modules</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Outpatient (OPD) & inpatient (IPD) management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Online scheduling, mobile apps & tablet versions</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Doctor & patient portals with secured messaging</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Pharmacy, laboratory, radiology & eClaim modules</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Accounting, HR & payroll management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Inventory, blood bank, mortuary & dietary modules</div>
+        </div>
+        <div class="feat-block">
+          <h5>Technical strengths</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>HL7 / PACS integration for radiology imaging</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Biometric integration & lab machine connectivity</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Business intelligence & real-time analytics</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Alert system — SMS, IM & email patient reminders</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Multi-location — hospitals, satellite clinics & pharmacies connected</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--purple)"></div>Phased implementation — go live without disrupting operations</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-bd)">Modular — deploy only what you need, expand later</div>
+          <div class="chip" style="background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-bd)">Blood bank, mortuary & dietary modules — truly all-in-one</div>
+          <div class="chip" style="background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-bd)">100% data ownership — hospital owns its own data</div>
+          <div class="chip" style="background:var(--purple-bg);color:var(--purple);border:1px solid var(--purple-bd)">Trusted by hospitals in 14 countries across 4 continents</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--purple);background:var(--purple-bg)">
+        <strong>Our takeaway:</strong> eHospital is the closest direct competitor to what we're building. It covers every hospital department and works in developing markets. Their modular approach — where hospitals can start small and expand — is a model we should follow. The key differentiator we can offer: a cleaner UI and a stronger mobile patient booking experience.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">Custom quote · SaaS or one-time licence</span>
+        <span class="audience">Hospitals, multi-specialty clinics & healthcare facilities globally</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── SECTION: GULF ── -->
+  <div class="sec-head">
+    <div class="sec-label" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">🌍 Gulf Region — UAE · Dubai · Abu Dhabi · Qatar · Saudi Arabia</div>
+    <div class="sec-rule"></div>
+    <div class="sec-count">1 key platform</div>
+  </div>
+
+  <div class="gulf-alert">
+    <div class="alert-icon">!</div>
+    <p><strong>Gulf compliance is non-negotiable.</strong> Any HMS operating in the UAE must be connected to <strong>NABIDH</strong> (Dubai Health Authority), <strong>Riayati</strong> (Abu Dhabi), or <strong>NPHIES</strong> (Saudi Arabia). These are government-mandated health data networks — not optional integrations. This is the biggest barrier to entry in this market.</p>
+  </div>
+
+  <!-- ⑨ MEDICOPLUS -->
+  <article class="card" id="medicoplus">
+    <div class="card-stripe" style="background:var(--blue)"></div>
+    <div class="card-head">
+      <div class="card-identity">
+        <div class="logo-box" style="background:var(--blue-bg);color:var(--blue)">MC</div>
+        <div>
+          <div class="comp-title">MedicoPlus / InstaHMS</div>
+          <div class="comp-sub">Clinic Management Software UAE — EMR, Billing, NABIDH & Riayati Approved</div>
+          <div class="tags">
+            <span class="tag" style="background:var(--blue-bg);color:var(--blue);border-color:var(--blue-bd)">NABIDH Approved</span>
+            <span class="tag" style="background:var(--teal-bg);color:var(--teal);border-color:var(--teal-bd)">Riayati Connected</span>
+            <span class="tag" style="background:var(--coral-bg);color:var(--coral);border-color:var(--coral-bd)">NPHIES Saudi Arabia</span>
+            <span class="tag" style="background:var(--green-bg);color:var(--green);border-color:var(--green-bd)">DHA Compliant</span>
+          </div>
+        </div>
+      </div>
+      <div class="card-actions">
+        <a class="btn btn-primary" href="https://www.clinicsoftware.ae" target="_blank">↗ MedicoPlus UAE</a>
+        <a class="btn btn-ghost" href="https://www.instahms.com" target="_blank">InstaHMS</a>
+      </div>
+    </div>
+    <div class="card-divider"></div>
+    <div class="card-body">
+      <div class="two-col">
+        <div class="feat-block">
+          <h5>Clinical & admin modules</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Patient registration & reception management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Appointment management & queue management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Nursing bench & outpatient (OP) management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>EMR — electronic medical records</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Radiology, X-ray & pharmacy management</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>VAT billing, financial accounting & insurance eClaim</div>
+        </div>
+        <div class="feat-block">
+          <h5>UAE-specific compliance</h5>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>NABIDH — Dubai Health Authority network integration</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>Riayati — Abu Dhabi health data system</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>NPHIES — Saudi Arabia National Platform</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>VAT-compliant billing for UAE market</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>HR, asset management & user security roles</div>
+          <div class="feat-item"><div class="feat-dot" style="background:var(--blue)"></div>E-prescription, dental treatment & lab management</div>
+        </div>
+      </div>
+      <div class="unique-row">
+        <h5>★ What makes it stand out</h5>
+        <div class="unique-chips">
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">Triple-compliant — NABIDH + Riayati + NPHIES in one system</div>
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">VAT billing — built for UAE tax requirements</div>
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">Covers UAE + Saudi Arabia in a single deployment</div>
+          <div class="chip" style="background:var(--blue-bg);color:var(--blue);border:1px solid var(--blue-bd)">Dental treatment module — rare among HMS platforms</div>
+        </div>
+      </div>
+      <div class="takeaway" style="border-color:var(--blue);background:var(--blue-bg)">
+        <strong>Our takeaway:</strong> MedicoPlus is the most direct Gulf competitor. Their triple compliance (NABIDH + Riayati + NPHIES) and VAT billing show what a Gulf-market HMS needs to include. Any system we deploy in the UAE must achieve the same regulatory integration — there is no shortcut here.
+      </div>
+      <div class="card-foot">
+        <span class="price-tag">Custom quote · +971 50 3869500</span>
+        <span class="audience">Clinics & hospitals across UAE, Abu Dhabi & Saudi Arabia</span>
+      </div>
+    </div>
+  </article>
+
+  <!-- ── SECTION: AWS AI ── -->
+  <div class="sec-head">
+    <div class="sec-label" style="background:var(--aws-bg);color:var(--amber);border:1px solid var(--aws-bd)">⚡ AI Infrastructure Layer</div>
+    <div class="sec-rule"></div>
+    <div class="sec-count">The technology powering next-gen HMS</div>
+  </div>
+
+  <div class="aws-card" id="aws">
+    <div class="aws-badge">Add-On Intelligence</div>
+    <div class="aws-title">AWS — Generative AI for Healthcare</div>
+    <div class="aws-sub">Amazon Connect Health · Amazon Bedrock · SageMaker · HealthScribe — Agentic AI built for hospitals</div>
+
+    <div class="aws-insight">
+      "Healthcare staff spend up to 80% of call handle time compiling data across systems for routine tasks like appointment scheduling. Amazon Connect Health changes this — patients call, the AI verifies identity, checks insurance, reviews availability and books the appointment, all without a human on the phone." — AWS, March 2026
+    </div>
+
+    <div class="aws-grid">
+      <div class="aws-module">
+        <h4>Amazon Connect Health (March 2026)</h4>
+        <div class="aws-feat">Patient verification — voice identity check with real-time EHR lookup</div>
+        <div class="aws-feat">Appointment management — natural language voice booking 24/7</div>
+        <div class="aws-feat">Patient insights — visit-specific summaries from full history</div>
+        <div class="aws-feat">Ambient documentation — AI writes clinical notes in real time</div>
+        <div class="aws-feat">Medical coding — auto-generates ICD-10 & CPT codes post-visit</div>
+      </div>
+      <div class="aws-module">
+        <h4>Amazon Bedrock + HealthScribe</h4>
+        <div class="aws-feat">Foundation models from Anthropic, Meta, Mistral — pick the right AI</div>
+        <div class="aws-feat">HealthScribe — doctor speaks, AI writes complete clinical notes</div>
+        <div class="aws-feat">Discharge summaries reduced from 30 min to 1 minute (Fujita Health)</div>
+        <div class="aws-feat">RAG — AI retrieves real patient data, not hallucinations</div>
+        <div class="aws-feat">HIPAA-eligible, SOC 2, enterprise security built-in</div>
+      </div>
+      <div class="aws-module">
+        <h4>SageMaker Data Agent</h4>
+        <div class="aws-feat">Analyse patient cohorts using plain English questions</div>
+        <div class="aws-feat">Understands clinical tables — demographics, diagnoses, encounters</div>
+        <div class="aws-feat">Auto-generates SQL & Python for complex analytics</div>
+        <div class="aws-feat">Identifies at-risk patients for early intervention</div>
+        <div class="aws-feat">Built-in human oversight checkpoints — safe & auditable</div>
+      </div>
+      <div class="aws-module">
+        <h4>Real-World Results</h4>
+        <div class="aws-feat">8× faster prescription analysis using NoHarm AI on AWS</div>
+        <div class="aws-feat">$500,000 saved per year for every 200 hospital beds</div>
+        <div class="aws-feat">98% satisfaction rating — ALMA AI assistant, CatSalut Spain</div>
+        <div class="aws-feat">78% increase in patient payments — Epic + AWS billing</div>
+        <div class="aws-feat">90% reduction in discharge summary time — Fujita Health, Japan</div>
+      </div>
+    </div>
+
+    <div class="unique-row">
+      <h5>★ What this means for our HMS</h5>
+      <div class="unique-chips">
+        <div class="chip" style="background:var(--aws-bg);color:var(--amber);border:1px solid var(--aws-bd)">AI-powered booking — patients book by voice, no hold times</div>
+        <div class="chip" style="background:var(--aws-bg);color:var(--amber);border:1px solid var(--aws-bd)">Ambient clinical notes — doctors speak, system documents</div>
+        <div class="chip" style="background:var(--aws-bg);color:var(--amber);border:1px solid var(--aws-bd)">Auto ICD-10 medical coding — no manual coding needed</div>
+        <div class="chip" style="background:var(--aws-bg);color:var(--amber);border:1px solid var(--aws-bd)">AI identifies at-risk patients before they deteriorate</div>
+        <div class="chip" style="background:var(--aws-bg);color:var(--amber);border:1px solid var(--aws-bd)">All HIPAA-eligible — safe for real patient data</div>
+      </div>
+    </div>
+
+    <div style="font-style:italic;font-size:13.5px;color:var(--ink-soft);line-height:1.65;margin-bottom:20px;padding:14px 18px;background:rgba(255,255,255,.7);border-radius:10px;border:1px solid var(--aws-bd)">
+      <strong style="color:var(--ink-mid);font-style:normal">Our takeaway:</strong> AWS is not a competitor — it's infrastructure. But the hospitals that integrate these AI tools will operate at a completely different level than those that don't. Building our HMS on AWS means we can offer AI appointment booking, automatic clinical documentation and smart patient risk alerts as native features, not add-ons.
+    </div>
+
+    <div class="aws-links">
+      <a class="btn btn-primary" style="background:var(--aws);color:#fff" href="https://aws.amazon.com/health/gen-ai/" target="_blank">↗ AWS Healthcare AI</a>
+      <a class="btn btn-ghost" href="https://aws.amazon.com/blogs/industries/introducing-amazon-connect-health-agentic-ai-for-healthcare-built-for-the-people-who-deliver-it/" target="_blank">Amazon Connect Health</a>
+      <a class="btn btn-ghost" href="https://aws.amazon.com/blogs/machine-learning/agentic-ai-for-healthcare-data-analysis-with-amazon-sagemaker-data-agent/" target="_blank">SageMaker Data Agent</a>
+    </div>
+  </div>
+
+</main>
+
+<!-- ════════════ FOOTER ════════════ -->
+<footer class="site-footer">
+  <p><strong>HMS Competitor Analysis — Market Research Report · April 2026</strong></p>
+  <p>9 competitors across Global, Gulf & AI Infrastructure markets · Research compiled from official vendor websites</p>
+  <p style="margin-top:8px;font-size:11.5px">Prepared for client review · All links connect to official vendor pages</p>
+</footer>
+
+<script>
+const cards = document.querySelectorAll('[id]');
+const links = document.querySelectorAll('.nav-a');
+const io = new IntersectionObserver(entries => {
+  entries.forEach(e => {
+    if (e.isIntersecting) {
+      links.forEach(l => l.classList.remove('active'));
+      const a = document.querySelector(`.nav-a[href="#${e.target.id}"]`);
+      if (a) { a.classList.add('active'); a.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' }); }
+    }
+  });
+}, { threshold: 0.35 });
+cards.forEach(c => io.observe(c));
+</script>
+</body>
+</html>
