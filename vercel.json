@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Hospital Management/index.html"
+    },
+    {
+      "src": "/competitor-analysis",
+      "dest": "/Hospital Management/hms-competitor analysis.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/$1"
+    }
+  ]
+}
